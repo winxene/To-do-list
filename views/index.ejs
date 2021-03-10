@@ -1,0 +1,17 @@
+<h1>Welcome to my To-Do List </h1>
+<p>Today's Task</p>
+<% for (let i=0; i< test.length; i++){%>
+    <p> <%= test[i] %> </p>
+<%}%>
+<form method="POST" action="/tasks">
+	<input type="text" name="task" />
+	<button type="submit">Submit</button>
+</form>
+<p>Today's Schedule</p>
+<% for (let i=0; i< jadwal.length; i++){%>
+    <p> <%= jadwal[i] %> </p>
+<%}%>
+<form method="POST" action="/jadwal">
+	<input type="text" name="jadwal" />
+	<button type="submit">Submit</button>
+</form>
